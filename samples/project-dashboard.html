@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Dashboard: Q1 Portfolio - Sample by Rio M. Sosa</title><meta name="robots" content="noindex"><style>
+:root{--paper:#fff;--bg:#eef2f8;--ink:#0b1b33;--muted:#5a6780;--line:#dde4ef;--tint:#f5f8fc;
+--blue:#2563eb;--blue-soft:#e6eeff;--green:#15803d;--green-soft:#e3f5ea;--amber:#b45309;--amber-soft:#fdf1dc;
+--red:#b91c1c;--red-soft:#fde8e8;--navy:#0b1b33}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+.ribbon{background:var(--navy);color:#dbe6ff;font:600 12px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;
+padding:10px 16px;text-align:center}
+.ribbon b{color:#fff}
+.doc{max-width:1000px;margin:28px auto 60px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:40px 44px;
+box-shadow:0 10px 30px rgba(11,27,51,.06)}
+.kicker{display:inline-block;font:700 11px/1 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);
+background:var(--blue-soft);padding:7px 10px;border-radius:999px}
+h1{font-size:34px;line-height:1.15;letter-spacing:-.02em;margin:16px 0 6px}
+h2{font-size:18px;margin:30px 0 12px;letter-spacing:-.01em}
+.lede{color:var(--muted);margin:0 0 22px;max-width:70ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;color:var(--muted);padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.meta b{color:var(--ink);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:10px 12px;background:var(--tint);border-bottom:1px solid var(--line)}
+td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.ok{background:var(--green-soft);color:var(--green)}.warn{background:var(--amber-soft);color:var(--amber)}
+.bad{background:var(--red-soft);color:var(--red)}.info{background:var(--blue-soft);color:var(--blue)}.mute{background:var(--tint);color:var(--muted)}
+.bar{height:8px;background:var(--tint);border-radius:99px;overflow:hidden;min-width:90px}.bar i{display:block;height:100%;background:var(--blue);border-radius:99px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
+.tile{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--tint)}
+.tile b{display:block;font-size:28px;letter-spacing:-.02em}.tile span{font-size:12px;color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+ul.clean{margin:0;padding-left:18px}ul.clean li{margin:6px 0}
+.box{border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.rag{display:flex;align-items:center;gap:14px;border-radius:14px;padding:16px 18px;background:var(--green-soft);color:var(--green);font-weight:600}
+.rag i{width:14px;height:14px;border-radius:50%;background:var(--green);display:inline-block}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;padding:12px 0 12px 48px;border-bottom:1px solid var(--line)}
+.steps li:before{content:counter(s);position:absolute;left:0;top:10px;width:32px;height:32px;border-radius:10px;background:var(--blue-soft);
+color:var(--blue);font-weight:700;display:grid;place-items:center}
+.steps b{display:block}
+.foot{margin-top:30px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.hbar{display:grid;grid-template-columns:110px 1fr 40px;gap:10px;align-items:center;margin:8px 0;font-size:13px}
+.hbar .bar{height:12px}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:8px}
+.tl div{border-top:4px solid var(--line);padding-top:10px;font-size:12px;color:var(--muted)}
+.tl div.done{border-color:var(--blue);color:var(--ink)}.tl div.now{border-color:var(--amber);color:var(--ink)}
+.tl b{display:block;font-size:13px}
+s{color:var(--red)}
+.fix{color:var(--green);font-weight:600}
+@media (max-width:760px){.doc{margin:0;border-radius:0;padding:26px 18px}.tiles{grid-template-columns:1fr 1fr}.cols{grid-template-columns:1fr}
+table{font-size:13px}td,th{padding:8px}.tl{grid-template-columns:1fr 1fr}}
+</style></head>
+<body><div class="ribbon"><b>Sample work</b> &middot; fictional company and data, made to demonstrate the format</div>
+<main class="doc"><span class="kicker">Dashboard</span><h1>Project Dashboard: Q1 Portfolio</h1><p class="lede">A monthly view across projects so leadership sees progress, deadlines and workload without opening five spreadsheets.</p>
+<div class="meta"><span>Scope: <b>4 active projects</b></span><span>As of: <b>Mar 31</b></span><span>Source: <b>Project trackers</b></span><span>Built in: <b>Google Sheets</b></span></div>
+<div class="tiles"><div class="tile"><b>4</b><span>Active projects</span></div><div class="tile"><b>68%</b><span>Tasks on time</span></div>
+<div class="tile"><b>2</b><span>Milestones this month</span></div><div class="tile"><b>1</b><span>Project at risk</span></div></div>
+<table><thead><tr><th>Project</th><th>Lead</th><th>Next milestone</th><th>Status</th><th>Progress</th></tr></thead><tbody>
+<tr><td><b>Website Relaunch</b></td><td>Jen</td><td>Launch - Mar 28</td><td><span class="pill info">On track</span></td><td><div class="bar"><i style="width:80%"></i></div></td></tr>
+<tr><td><b>New Branch Setup</b></td><td>Mark</td><td>Equipment delivery - Apr 04</td><td><span class="pill warn">At risk</span></td><td><div class="bar"><i style="width:45%"></i></div></td></tr>
+<tr><td><b>Staff Handbook Update</b></td><td>Ana</td><td>Final review - Apr 10</td><td><span class="pill info">On track</span></td><td><div class="bar"><i style="width:60%"></i></div></td></tr>
+<tr><td><b>CRM Data Cleanup</b></td><td>Rio</td><td>Handover - Mar 20</td><td><span class="pill ok">Done</span></td><td><div class="bar"><i style="width:100%"></i></div></td></tr>
+</tbody></table>
+<div class="cols"><div><h2>Team workload</h2><div class="hbar"><span>Ana</span><div class="bar"><i style="width:72%"></i></div><b>72%</b></div><div class="hbar"><span>Rio</span><div class="bar"><i style="width:85%"></i></div><b>85%</b></div><div class="hbar"><span>Mark</span><div class="bar"><i style="width:40%"></i></div><b>40%</b></div><div class="hbar"><span>Jen</span><div class="bar"><i style="width:92%"></i></div><b>92%</b></div></div>
+<div><h2>Website Relaunch timeline</h2><div class="tl"><div class="done"><b>Plan</b>Feb</div><div class="done"><b>Content</b>Mar 1-10</div>
+<div class="now"><b>Design</b>Mar 11-20</div><div><b>Build</b>Mar 21-26</div><div><b>Launch</b>Mar 28</div></div></div></div>
+<p class="foot">Prepared by Rio M. Sosa as a portfolio sample. Brightline Studio is a fictional company; names, dates and figures are illustrative.</p>
+</main></body></html>

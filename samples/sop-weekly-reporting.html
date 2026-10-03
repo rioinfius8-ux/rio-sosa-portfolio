@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOP: Preparing the Weekly Status Report - Sample by Rio M. Sosa</title><meta name="robots" content="noindex"><style>
+:root{--paper:#fff;--bg:#eef2f8;--ink:#0b1b33;--muted:#5a6780;--line:#dde4ef;--tint:#f5f8fc;
+--blue:#2563eb;--blue-soft:#e6eeff;--green:#15803d;--green-soft:#e3f5ea;--amber:#b45309;--amber-soft:#fdf1dc;
+--red:#b91c1c;--red-soft:#fde8e8;--navy:#0b1b33}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+.ribbon{background:var(--navy);color:#dbe6ff;font:600 12px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;
+padding:10px 16px;text-align:center}
+.ribbon b{color:#fff}
+.doc{max-width:1000px;margin:28px auto 60px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:40px 44px;
+box-shadow:0 10px 30px rgba(11,27,51,.06)}
+.kicker{display:inline-block;font:700 11px/1 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);
+background:var(--blue-soft);padding:7px 10px;border-radius:999px}
+h1{font-size:34px;line-height:1.15;letter-spacing:-.02em;margin:16px 0 6px}
+h2{font-size:18px;margin:30px 0 12px;letter-spacing:-.01em}
+.lede{color:var(--muted);margin:0 0 22px;max-width:70ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px;color:var(--muted);padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.meta b{color:var(--ink);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:10px 12px;background:var(--tint);border-bottom:1px solid var(--line)}
+td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.ok{background:var(--green-soft);color:var(--green)}.warn{background:var(--amber-soft);color:var(--amber)}
+.bad{background:var(--red-soft);color:var(--red)}.info{background:var(--blue-soft);color:var(--blue)}.mute{background:var(--tint);color:var(--muted)}
+.bar{height:8px;background:var(--tint);border-radius:99px;overflow:hidden;min-width:90px}.bar i{display:block;height:100%;background:var(--blue);border-radius:99px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
+.tile{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--tint)}
+.tile b{display:block;font-size:28px;letter-spacing:-.02em}.tile span{font-size:12px;color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+ul.clean{margin:0;padding-left:18px}ul.clean li{margin:6px 0}
+.box{border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.rag{display:flex;align-items:center;gap:14px;border-radius:14px;padding:16px 18px;background:var(--green-soft);color:var(--green);font-weight:600}
+.rag i{width:14px;height:14px;border-radius:50%;background:var(--green);display:inline-block}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;padding:12px 0 12px 48px;border-bottom:1px solid var(--line)}
+.steps li:before{content:counter(s);position:absolute;left:0;top:10px;width:32px;height:32px;border-radius:10px;background:var(--blue-soft);
+color:var(--blue);font-weight:700;display:grid;place-items:center}
+.steps b{display:block}
+.foot{margin-top:30px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.hbar{display:grid;grid-template-columns:110px 1fr 40px;gap:10px;align-items:center;margin:8px 0;font-size:13px}
+.hbar .bar{height:12px}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:8px}
+.tl div{border-top:4px solid var(--line);padding-top:10px;font-size:12px;color:var(--muted)}
+.tl div.done{border-color:var(--blue);color:var(--ink)}.tl div.now{border-color:var(--amber);color:var(--ink)}
+.tl b{display:block;font-size:13px}
+s{color:var(--red)}
+.fix{color:var(--green);font-weight:600}
+@media (max-width:760px){.doc{margin:0;border-radius:0;padding:26px 18px}.tiles{grid-template-columns:1fr 1fr}.cols{grid-template-columns:1fr}
+table{font-size:13px}td,th{padding:8px}.tl{grid-template-columns:1fr 1fr}}
+</style></head>
+<body><div class="ribbon"><b>Sample work</b> &middot; fictional company and data, made to demonstrate the format</div>
+<main class="doc"><span class="kicker">SOP / documentation</span><h1>SOP: Preparing the Weekly Status Report</h1><p class="lede">A step-by-step procedure anyone on the team can follow, so the weekly report goes out the same way every Friday.</p>
+<div class="meta"><span>SOP ID: <b>PMO-003</b></span><span>Version: <b>1.2</b></span><span>Owner: <b>Rio M. Sosa</b></span><span>Review: <b>Every quarter</b></span></div>
+<h2>Purpose</h2><p>Give managers a consistent, accurate summary of project progress every Friday by 4:00 PM.</p>
+<h2>Procedure</h2><ol class="steps">
+<li><b>Thursday 3:00 PM - Request updates</b>Send the update request template to each task owner in the team chat.</li>
+<li><b>Friday 10:00 AM - Update the tracker</b>Record status and progress for every task. Chase missing updates directly.</li>
+<li><b>Friday 12:00 PM - Check the numbers</b>Confirm totals, due dates and overdue items match the tracker. Flag anything overdue as At risk.</li>
+<li><b>Friday 2:00 PM - Draft the report</b>Fill in the report template: overall status, done, next, risks, decisions needed.</li>
+<li><b>Friday 3:00 PM - Review</b>Send to the project lead for a quick check. Apply edits.</li>
+<li><b>Friday 4:00 PM - Send and file</b>Email the report to stakeholders and save a PDF copy in <i>Reports / 2026 / Week-NN</i>.</li></ol>
+<h2>Quality checklist</h2><ul class="clean"><li>Every risk has an owner and a next step</li><li>Dates use the same format (Mar 07)</li>
+<li>Report fits on one page</li><li>File name follows <i>WSR_Project_Week-NN.pdf</i></li></ul>
+<p class="foot">Prepared by Rio M. Sosa as a portfolio sample. Brightline Studio is a fictional company; names, dates and figures are illustrative.</p>
+</main></body></html>
